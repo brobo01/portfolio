@@ -12,7 +12,7 @@ nav-bar{
   width: 100%;
   height: 60px;
   /* border-bottom: 3px solid red; */
-  box-shadow: 10px 5px 5px yellow;
+  /* box-shadow: 10px 5px 5px yellow; */
 }
 
 .nav-title{
@@ -56,7 +56,7 @@ body-container{
   flex-direction: column;
   justify-content: center;
   /* background-color: rgb(245, 241, 237); */
-  width: 700px;
+  max-width: 700px;
 }
 
 hero{
@@ -143,6 +143,8 @@ name{
 
 img{
   margin: 5px;
+  width: 350px;
+  height: 175px;
 }
 
 .project-buttons{
@@ -246,3 +248,89 @@ footer-text{
   height: 100%;
   color: white;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  about{
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .skills{
+    margin: 5px;
+    padding: 10px;
+    width: 70px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  
+  #skill-icon{
+    font-size: 20px;
+    color: grey;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-box{
+    align-items: center;
+    flex-direction: column;
+}
+contact-text{
+  width: 350px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-title{
+    font-size: 30px;
+  }
+  .hero-sub-title{
+    font-size: 20px;
+  }
+  nav-bar{
+    justify-content: center;
+  }
+  .nav-title{
+    display: none;
+  }
+  about-text{
+    width: 350px;
+  }
+  about-skills{
+    width: 350px;
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-title{
+    font-size: 20px;
+    padding: 20px 50px;
+  }
+  .hero-sub-title{
+    font-size: 15px;
+  }
+  nav-bar{
+    justify-content: center;
+  }
+  .nav-title{
+    display: none;
+  }
+  about-text{
+    width: 300px;
+  }
+  about-skills{
+    width: 300px;
+  }
+  img{
+    width: 300px;
+  }
+  .project-box-content{
+    width: 300px;
+  }
+  contact-text{
+    width: 300px;
+  }
+
+}
+
