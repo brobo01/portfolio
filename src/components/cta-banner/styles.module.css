@@ -1,0 +1,31 @@
+.content {
+  background-color: var(--background-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "left" "right";
+  gap: 1rem; /* optional */
+}
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "left left left left left left . . right right right right";
+  }
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

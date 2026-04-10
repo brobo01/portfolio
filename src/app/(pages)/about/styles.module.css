@@ -1,0 +1,486 @@
+/* .title {
+  color: var(--heading-text);
+}
+.paragraph {
+  color: var(--paragraph-text);
+}
+
+.primaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+}
+
+.secondaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+  filter: hue-rotate(180deg);
+}
+.tertiaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+  filter: hue-rotate(50deg);
+}
+*/
+/* ===========================
+   TOKENS
+=========================== */
+.page {
+  --color-bg: #0d0d0d;
+  --color-surface: #141414;
+  --color-border: #1f1f1f;
+  --color-accent: #c8f542;
+  --color-accent-muted: rgba(200, 245, 66, 0.1);
+  --color-text-primary: #f0ede6;
+  --color-text-secondary: #7a7773;
+  --color-text-muted: #3d3c3a;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "DM Mono", "Courier New", monospace;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   FONT IMPORTS (add to _document or layout.js in real Next.js app)
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+=========================== */
+
+/* ===========================
+   BACKGROUND GRID
+=========================== */
+.gridOverlay {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+.section {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) 0;
+}
+
+.sectionInner,
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.sectionTitle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-lg) 0;
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.heroInner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.heroText {
+  flex: 1;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.tagline {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 var(--space-md);
+  max-width: 38ch;
+}
+
+.heroLinks {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.heroLink {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2px;
+}
+
+.heroLink:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.heroAccent {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(6rem, 15vw, 14rem);
+  font-weight: 400;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-border);
+  user-select: none;
+  flex-shrink: 0;
+  transition: -webkit-text-stroke-color 0.4s ease;
+}
+
+.heroAccent:hover {
+  -webkit-text-stroke-color: var(--color-accent-muted);
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+.aboutBody {
+  max-width: 65ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.body {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.skillGroup {
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s ease;
+}
+
+.skillGroup:hover {
+  border-color: var(--color-accent);
+}
+
+.skillCategory {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-sm);
+}
+
+.skillList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.skillItem {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+
+.skillItem:hover {
+  color: var(--color-text-primary);
+  background: var(--color-accent-muted);
+  border-color: transparent;
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.2s ease;
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+}
+
+.timelineItem:hover {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.timelineMeta {
+  padding-top: 4px;
+}
+
+.timelinePeriod {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.timelineHeader {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.timelineRole {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.timelineCompany {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.timelineDesc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-sm);
+  max-width: 60ch;
+}
+
+.timelineTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  padding: 3px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+.educationGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.eduItem {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.eduItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.eduYear {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  min-width: 48px;
+  flex-shrink: 0;
+}
+
+.eduTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 4px;
+}
+
+.eduOrg {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) var(--space-md);
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.footerText {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cta {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+  padding-bottom: 2px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.cta:hover {
+  color: var(--color-accent);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .heroInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroAccent {
+    display: none;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}

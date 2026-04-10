@@ -1,0 +1,36 @@
+.hero {
+  background: linear-gradient(
+    270deg,
+    #ffd1dc,
+    #ffe4b5,
+    #ffffcc,
+    #d0f0c0,
+    #cce7ff,
+    #e6ccff
+  );
+  background-size: 1200% 1200%;
+  animation: gradientShift 40s ease infinite;
+  padding-top: var(--global-inline-padding);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content {
+  gap: 0.5rem;
+  min-height: 30vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+.title {
+  color: var(--heading-text);
+}
+.paragraph {
+  color: var(--paragraph-text);
+}
+
+.primaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+}
+
+.secondaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+  filter: hue-rotate(180deg);
+}
+.tertiaryColour {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-colour);
+  filter: hue-rotate(50deg);
+  /* background-color: hsl(var(--background-colour), 20%, 30%); */
+}

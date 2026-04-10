@@ -1,0 +1,56 @@
+.container {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.stats {
+  margin-bottom: 10px;
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  perspective: 600px;
+  cursor: pointer;
+}
+
+.innerCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.win {
+  margin-top: 15px;
+}

@@ -1,0 +1,22 @@
+:root {
+  --background: #fff;
+  --background-light: #f1f1f1;
+  --foreground: #1a1a1a;
+  /* --background: #1a1a1a;
+  --background-light: #3c3c3c;
+  --foreground: #ededed; */
+
+  --heading-text-colour: #1a1a1a;
+
+  --paragraph-text-colour: #3c3c3c;
+
+  --global-inline-padding: 2rem;
+  --global-internal-block-padding: 2rem;
+  --accent-blue: #4285f4;
+}
+@media (min-width: 768px) {
+  :root {
+    --global-inline-padding: 4rem;
+    --global-internal-block-padding: 4rem;
+  }
+}

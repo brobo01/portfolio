@@ -1,0 +1,21 @@
+/* px-6 py-3 text-white border border-white/30 rounded-full backdrop-blur-sm bg-white/10 hover:bg-white/20 transition-all text-sm tracking-widest uppercase */
+.container {
+  position: relative;
+}
+
+.content_container {
+  position: absolute;
+  background-color: #1a1a1a;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content_container > * {
+  color: white;
+}
+
+.button {
+  color: green;
+}

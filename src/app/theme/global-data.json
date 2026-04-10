@@ -1,0 +1,15 @@
+{
+  "ctaBannerServices": {
+    "title": "What problems can we solve?",
+    "paragraph": "From a simple component to a full web app and everything in between",
+    "cta": { "url": "/services", "text": "Services" }
+  },
+  "ctaBannerContact": {
+    "title": "Let's have a chat",
+    "cta": { "url": "/contact", "text": "Contact Ben" }
+  },
+  "ctaBannerAbout": {
+    "title": "Want to know more about Ben?",
+    "cta": { "url": "/about", "text": "About" }
+  }
+}

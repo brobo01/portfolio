@@ -1,0 +1,120 @@
+{
+  "colorHeroText": {
+    "title": "About Ben"
+  },
+  "ctaBanner": {
+    "title": "What can I do for you?",
+    "cta": { "url": "/services", "text": "Services" }
+  },
+  "background": {
+    "title": "Background",
+    "left": {
+      "subheading": "I’m Ben — a software developer with a front-end focus and over five years of industry experience, specialising in building intuitive, high-quality user experiences. Based in the South East of the UK, I enjoy creating digital products that are both visually engaging and highly functional."
+    },
+    "right": {
+      "paragraphs": [
+        "Most recently, I worked at Total Onion, a digital agency specialising in premium spirits brands. There, I contributed to the development and maintenance of websites for Pernod Ricard, including greenfield and production builds for brands such as Chivas Regal, Beefeater Gin, Scapa Whisky, and Longmorn Whisky.",
+        "Prior to this, I founded and developed ShortSport — a sports news app designed to deliver concise match updates in three bullet points for time-pressed fans. Built using GatsbyJS with a Contentful headless CMS and Firebase authentication, the app was deployed to the Apple App Store and attracted over 1,000 users. Alongside development, I led a small team of freelancers across marketing, content, and operations.",
+        "My transition into software development began during the first COVID-19 lockdown, when I completed a Software Engineering course with General Assembly. Since then, I’ve developed a strong foundation not only in coding, but in problem-solving and independently navigating complex technical challenges — skills I continue to build on every day.",
+        "Before moving into tech, I spent eight years in Corporate Finance in the City of London. I worked on IPOs, mergers and acquisitions, and fundraising transactions across sectors including technology, retail, natural resources, and investment funds, with deal sizes ranging from hundreds of thousands to billions of pounds. This experience shaped my commercial mindset and ability to deliver under pressure — strengths I now bring to my development work."
+      ]
+    },
+    "mobileColumns": "1",
+    "mobileLeft": "1",
+    "mobileRight": "1",
+    "desktopColumns": "12",
+    "desktopLeft": "4",
+    "desktopRight": "7"
+  },
+  "interests": {
+    "title": "Interests",
+    "left": {
+      "subheading": "Away from the keyboard, these are a few of the things I enjoy."
+    },
+    "right": {
+      "gallery": [
+        "https://www.nationalparks.uk/app/uploads/2020/07/1-HERO-%C2%A9-Nick-Lucas-1800x1080.jpg",
+        "https://coffeeconnection.com.au/cdn/shop/articles/health-benefits-of-cappuccino-coffee-908368.jpg?v=1748601688",
+        "https://www.goodwood.com/globalassets/.road--racing/road/news/2020/1-january/bullitt-mustang-auction/ford-mustang-bullitt-1968-auction-goodwood-13012020.jpg?rxy=0.5,0.5",
+        "https://www.rolexfastnetrace.com/files/downloads/images/2021-news/2021-rfr-start-fleet-irc-one-ino-cb.jpg",
+        "https://www.lemans.org/media/cache/api_news_large/assets/fileuploads/67/4d/674dd1bd7dd16.jpg",
+        "https://cdn.mos.cms.futurecdn.net/mFLjsznJrPJuZZHSCEvxg7-1200-80.jpg",
+        "https://stgilesdorset.com/wp-content/uploads/2024/05/Blog-e1717062317251-1200x1597.png",
+        "https://www.foodandwine.com/thmb/MO-hoMJlE9A69ZF6a6haP79NG34=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Use-Your-Grill-to-Meal-Plan-FT-BLOG0723-6c2eebaaed8d419ba6864013bd8ffdfa.jpg",
+        "https://cdn.prod.website-files.com/637f750dfbde4019268c20c4/64c7d5d8093c8cc221b151a0_Defender%20110%20Terrain.jpg",
+        "https://todayshomeowner.com/wp-content/uploads/2023/10/AdobeStock_54535145-1622x1081.jpeg",
+        "https://www.greece-is.com/wp-content/uploads/2022/01/Greek-Flag_Sea.jpg",
+        "https://www.goodwood.com/globalassets/.road--racing/event-coverage/revival/2025/09-sept/2026-dates-announce/2026-revival-dates-annaounced-01.jpg?rxy=0.47,0.6",
+        "https://blog.maisonsport.com/wp-content/uploads/2025/03/24.12.11_Maison_Sport__WR58786_JW.jpg",
+        "https://plus.unsplash.com/premium_photo-1733342403779-a850e80de8f2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29sZCUyMGJlZXJ8ZW58MHx8MHx8fDA%3D",
+        "https://linkspaces.co.uk/wp-content/uploads/2024/05/gb-botanica-gym-link-spaces-slough.jpg"
+      ]
+    },
+    "mobileColumns": 1,
+    "mobileLeft": 1,
+    "mobileRight": 1,
+    "desktopColumns": 12,
+    "desktopLeft": 3,
+    "desktopRight": 8,
+    "galleryColumnsMobile": 2,
+    "galleryColumnsDesktop": 5
+  },
+  "experience": {
+    "title": "Experience",
+    "cards": [
+      {
+        "heading": "Total Onion",
+        "sub_heading": "Software Devloper",
+        "eyebrow": "September 2021 - April 2026",
+        "paragraphs": [
+          "Contracted to build, maintain and optimise websites for multiple global brands while embedded within drinks company Pernod Ricard",
+          "Member of a cross functional team, working with product owners, designers, QA, and project managers to take features end-to-end from concept to deployment",
+          "Produced pixel-perfect, responsive web sites and components in fast-paced, customer-facing environments",
+          "Greenfield builds of Beefeater Gin, Longmorn, Secret Speyside and Scapa Whisky websites delivered on schedule, meeting all functional and design requirements",
+          "Responsibilities also included accessibility (WCAG) compliance, performance optimisation and SEO, delivered through Agile methodologies, CI/CD, Test Driven Development",
+          "Conducted structured code reviews and supported the mentoring and development of junior developers"
+        ],
+        "bottom_paragraph": "Tech stack included HTML, CSS, Javascript, Vue.js, Php, twig, Blade, Tailwind and RESTful APIs"
+      },
+      {
+        "heading": "Shortsports Limited",
+        "sub_heading": "Founder",
+        "eyebrow": "January 2018 - June 2023",
+        "paragraphs": [
+          "Founded and built ShortSport, a sports news app for busy sports fans using GatsbyJS, Contentful headless CMS and published in the Apple Appstore with over 1,000 users",
+          "Extensive functionality including sign in/sign up user flow, personalised news feed, like and comment on posts, image upload, post sharing and more",
+          "Managed a team of freelance content providers, performance marketers and graphic designers"
+        ]
+      },
+
+      {
+        "heading": "General Assembly",
+        "sub_heading": "Software Engineering Immersive",
+        "eyebrow": "March 2020 - June 2020",
+        "paragraphs": [
+          "12-week immersive software coding course using agile methodologies to create full stack applications, including group projects, pair coding and solo challenges.",
+          "Developed a keen interest in writing clean, understandable code and covered both front and back-end technologies, such as JavaScript, HTML, CSS, SASS React, React Hooks, PostgreSQL, Django, Python MongoDB",
+          "The course was taken fully remote due to Covid-19 so clear communication was crucial to delivering pair and group projects with attractive design, great functionality and excellent UX/UI"
+        ]
+      },
+      {
+        "heading": "Grant Thornton",
+        "sub_heading": "Public Company Advisory",
+        "eyebrow": "June 2018 - January 2020",
+        "paragraphs": [
+          "Advised small companies, across the technology, investment funds and resources sectors on regulatory aspects of fund-raising and M&A",
+          "Worked closely with other team members to deliver best in class advice under time pressure"
+        ]
+      },
+      {
+        "heading": "Liberum Capital Limited",
+        "sub_heading": "Investment Banking Department",
+        "eyebrow": "August 2015 – December 2017",
+        "paragraphs": [
+          "Completed a number of transactions with a focus on retail, consumer, investment funds and natural resources",
+          "Supported transaction execution through day-to-day management of key workstreams and deliverables, including financial due diligence review, legal due diligence review and public document drafting"
+        ]
+      }
+    ]
+  }
+}
