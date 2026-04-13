@@ -6,7 +6,7 @@ export default function SplitContent(props) {
   return (
     <section className={layout.container}>
       <div className={styles.content}>
-        <h3>{props.title}</h3>
+        {props.title ? <h3>{props.title}</h3> : null}
         <div
           className={styles.grid}
           style={{

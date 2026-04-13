@@ -2,7 +2,6 @@ import styles from "./styles.module.css"
 
 export default function Card(props) {
   const { card, full, setActive } = props
-  console.log(props)
   return (
     <div key={props.index} className={styles.inner_card}>
       {card.heading ? <h4 className={styles.heading}>{card.heading}</h4> : null}

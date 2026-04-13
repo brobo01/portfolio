@@ -47,7 +47,7 @@ function Navigation(props) {
 
   const pageUrls = [
     { href: "/about", label: "About" },
-    // { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
     // { href: "/case-studies", label: "Case Studies" },
     // { href: "/games", label: "Games" },
     // { href: "/apis", label: "APIs" },

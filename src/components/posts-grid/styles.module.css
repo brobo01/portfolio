@@ -1,0 +1,46 @@
+/* .post {
+  background-color: var(--background-light);
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.post {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  border-bottom: 1px solid var(--accent-blue);
+  padding: 20px 0px;
+}
+
+.heading {
+  font-size: 2rem;
+}
+.subheading {
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  flex-direction: column;
+  gap: 0;
+}
+
+.subheading > * {
+  font-size: 1.2rem;
+}
+
+.overview {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 20px;
+  }
+  .subheading {
+    gap: 15px;
+    flex-direction: row;
+  }
+}

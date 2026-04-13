@@ -3,6 +3,7 @@
 import { useState, useRef } from "react"
 import styles from "./styles.module.css"
 import layout from "@/app/theme/layout.module.css"
+import ctas from "@/app/theme/ctas.module.css"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -155,7 +156,7 @@ export default function ContactForm() {
 
                 <button
                   type="submit"
-                  className={styles.submitBtn}
+                  className={ctas.submitBtn}
                   disabled={status === "sending"}
                 >
                   {status === "sending" ? (

@@ -9,7 +9,6 @@ export default async function NasaHero() {
   )
 
   const posts = await data.json()
-  console.log(posts)
   return (
     <section>
       <h1>NASA data here</h1>

@@ -13,6 +13,7 @@
   --global-inline-padding: 2rem;
   --global-internal-block-padding: 2rem;
   --accent-blue: #4285f4;
+  --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
   :root {

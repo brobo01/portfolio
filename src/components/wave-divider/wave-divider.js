@@ -9,7 +9,7 @@ export default function WaveDivider() {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["75% 100%", "100% 75%"],
+    offset: ["45% 65%", "65% 45%"],
   })
 
   // Morph: flat → medium curve → strong curve

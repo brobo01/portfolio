@@ -1,0 +1,40 @@
+{
+  "blog_posts": {
+    "left": {
+      "heading": "Posts"
+    },
+    "right": {
+      "posts": [
+        {
+          "title": "Whistle While You Code",
+          "published": "17 February 2026",
+          "overview": "Every developer has a soundtrack. Whether it's lo-fi beats, thrash metal, absolute silence, or the ambient hum of a coffee shop — the music you write code to is not a neutral backdrop. It's an active ingredient.",
+          "time_to_read": "7 mins",
+          "url": "/whistle-while-you-code"
+        },
+        {
+          "title": "No Such Thing As A Full Stack Developer",
+          "published": "25 January 2026",
+          "overview": "We've been collectively pretending that a single developer can be genuinely excellent at both frontend and backend work. I think it's time to have an honest conversation about why that's mostly not true — and what it means for how we build teams.",
+          "time_to_read": "15 mins",
+          "url": "/no-such-thing-as-a-full-stack-developer"
+        },
+        {
+          "title": "Create React App",
+          "published": "10 December 2025",
+          "overview": "Create React App was the scaffolding tool that introduced a generation of developers to React. It served its purpose brilliantly. And it's time to move on — not because it's broken, but because the web has moved well past what it was designed for.",
+          "time_to_read": "10 mins",
+          "url": "/create-react-app"
+        }
+      ]
+    },
+    "mobileColumns": 1,
+    "mobileLeft": 1,
+    "mobileRight": 1,
+    "desktopColumns": 12,
+    "desktopLeft": 3,
+    "desktopRight": 8,
+    "galleryColumnsMobile": 2,
+    "galleryColumnsDesktop": 5
+  }
+}

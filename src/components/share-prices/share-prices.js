@@ -7,9 +7,7 @@ export default async function SharePrices() {
   const data = await fetch(
     "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=UEE46UC67S3GBFCT",
   )
-
   const posts = await data.json()
-  console.log(posts)
   return (
     <section>
       <h1>Shareprices data here</h1>

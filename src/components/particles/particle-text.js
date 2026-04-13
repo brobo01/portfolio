@@ -51,7 +51,6 @@ export default function ParticleText() {
       // const fontSize = Math.min(90, Math.min(160, containerWidth * 0.12))
       const fontSize = isMobile ? 140 : 130
       const fontAlign = isMobile ? "center" : "right"
-      console.log(fontSize)
 
       ctx.fillStyle = "white"
       // ctx.textAlign = fontAlign

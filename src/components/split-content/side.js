@@ -1,5 +1,6 @@
 import styles from "./styles.module.css"
 import Gallery from "../gallery/gallery"
+import PostsGrid from "../posts-grid/posts-grid"
 
 export default function Side(props) {
   return (
@@ -10,7 +11,7 @@ export default function Side(props) {
         [`--desktop-columns-${props.side}`]: props.desktopColumns,
       }}
     >
-      {props.title ? <h1>{props.title}</h1> : null}
+      {props.heading ? <h3>{props.heading}</h3> : null}
       {props.subheading ? <h6>{props.subheading}</h6> : null}
       {props.paragraphs ? (
         <div className={styles.paragraphs}>
@@ -20,6 +21,7 @@ export default function Side(props) {
         </div>
       ) : null}
       {props.gallery ? <Gallery images={props.gallery} /> : null}
+      {props.posts ? <PostsGrid {...props} /> : null}
     </div>
   )
 }

@@ -1,21 +1,12 @@
-import LikeButton from "@/components/like-button"
 import ColorHero from "@/components/color-hero/color-hero"
-import FullStack from "./posts/full-stack"
-import CreateReactApp from "./posts/create-react-app"
+import SplitContent from "@/components/split-content/split-content"
+import data from "./data.json"
 
 export default async function Page() {
-  // const posts = await getPosts()
-
   return (
     <main>
       <ColorHero title="Blog" />
-      {/* <FullStack /> */}
-      {/* <CreateReactApp /> */}
+      <SplitContent {...data.blog_posts} />
     </main>
-    // <ul>
-    //   {posts.map((post) => (
-    //     <Post key={post.id} post={post} />
-    //   ))}
-    // </ul>
   )
 }

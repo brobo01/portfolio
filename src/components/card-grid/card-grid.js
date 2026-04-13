@@ -5,32 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import styles from "./styles.module.css"
 import layout from "@/app/theme/layout.module.css"
 import Card from "./card"
-const cards = [
-  {
-    id: 1,
-    title: "Card One",
-    short: "Short text",
-    long: "This is more detailed information about Card One.",
-  },
-  {
-    id: 2,
-    title: "Card Two",
-    short: "Short text",
-    long: "This is more detailed information about Card Two.",
-  },
-  {
-    id: 3,
-    title: "Card Three",
-    short: "Short text",
-    long: "This is more detailed information about Card Three.",
-  },
-  {
-    id: 4,
-    title: "Card Four",
-    short: "Short text",
-    long: "This is more detailed information about Card Four.",
-  },
-]
+
 export default function CardGrid(props) {
   const [active, setActive] = useState(null)
 
@@ -38,17 +13,14 @@ export default function CardGrid(props) {
     <section className={layout.container}>
       {props.title ? <h3>{props.title}</h3> : null}
       <div className={styles.grid}>
-        {props.cards?.map((card) => (
+        {props.cards?.map((card, index) => (
           <motion.div
-            key={card.id}
+            key={index}
             className={styles.card}
             layout
             onClick={() => setActive(card)}
           >
             <Card card={card} full={false} />
-            {/* <h4>{card.heading}</h4>
-            <h5>{card.sub_heading}</h5>
-            <h5>{card.eyebrow}</h5> */}
           </motion.div>
         ))}
 

@@ -129,53 +129,6 @@
   margin: 0;
 }
 
-/* ── Submit button ── */
-.submitBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.9rem 2rem;
-  background: var(--ink);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  transition:
-    background var(--transition),
-    transform var(--transition),
-    box-shadow var(--transition);
-  box-shadow: 0 4px 14px rgba(17, 16, 16, 0.18);
-  align-self: flex-start;
-}
-
-.submitBtn:hover:not(:disabled) {
-  background: var(--accent-blue);
-  box-shadow: 0 6px 20px rgba(192, 57, 43, 0.3);
-  transform: translateY(-1px);
-}
-
-.submitBtn:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.submitBtn:disabled {
-  opacity: 0.65;
-  cursor: not-allowed;
-}
-
-.arrow {
-  transition: transform var(--transition);
-}
-
-.submitBtn:hover:not(:disabled) .arrow {
-  transform: translateX(4px);
-}
-
 /* Spinner */
 .spinner {
   display: inline-block;
