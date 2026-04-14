@@ -4,6 +4,7 @@ import { useState, useRef } from "react"
 import styles from "./styles.module.css"
 import layout from "@/app/theme/layout.module.css"
 import ctas from "@/app/theme/ctas.module.css"
+import { trackEvent } from "../firebase/firebase"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,11 +15,23 @@ export default function ContactForm() {
   })
   const [status, setStatus] = useState("idle") // idle | sending | success | error
   const [errorMsg, setErrorMsg] = useState("")
+  const [hasStarted, setHasStarted] = useState(false)
   const formRef = useRef(null)
+
+  async function formStarted() {
+    await trackEvent("contact_form_started", {
+      source: "contact",
+    })
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+    if (!hasStarted) {
+      console.log("ehllo wolrd")
+      setHasStarted(true)
+      formStarted()
+    }
   }
 
   const handleSubmit = async (e) => {

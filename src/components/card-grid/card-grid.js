@@ -5,9 +5,17 @@ import { motion, AnimatePresence } from "framer-motion"
 import styles from "./styles.module.css"
 import layout from "@/app/theme/layout.module.css"
 import Card from "./card"
+import { trackEvent } from "../firebase/firebase"
 
 export default function CardGrid(props) {
   const [active, setActive] = useState(null)
+
+  async function handleCardClick(card) {
+    setActive(card)
+    await trackEvent("card_opened", {
+      source: "experience",
+    })
+  }
 
   return (
     <section className={layout.container}>
@@ -18,7 +26,7 @@ export default function CardGrid(props) {
             key={index}
             className={styles.card}
             layout
-            onClick={() => setActive(card)}
+            onClick={() => handleCardClick(card)}
           >
             <Card card={card} full={false} />
           </motion.div>
