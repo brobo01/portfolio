@@ -19,7 +19,6 @@ const app = getApps().length ? getApp() : initializeApp(firebaseConfig)
 let analyticsInstance = null
 
 export async function getAnalyticsInstance() {
-  console.log("getAnalyticsInstance")
   if (typeof window === "undefined") return null
   if (analyticsInstance) return analyticsInstance
 
@@ -32,11 +31,10 @@ export async function getAnalyticsInstance() {
 
 // Convenience wrapper so pages don't need to import logEvent directly
 export async function trackEvent(eventName, params = {}) {
-  console.log("trackEvent")
   const analytics = await getAnalyticsInstance()
   if (analytics) {
     logEvent(analytics, eventName, params)
-    console.log(`[Analytics] ${eventName}`, params)
+    // console.log(`[Analytics] ${eventName}`, params)
   }
 }
 

@@ -28,7 +28,6 @@ export default function ContactForm() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
     if (!hasStarted) {
-      console.log("ehllo wolrd")
       setHasStarted(true)
       formStarted()
     }

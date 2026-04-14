@@ -17,6 +17,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 })
+
+export const metadata = {
+  title: "Ben Roberts - Software Engineer",
+  description: "Ben Roberts' personal portfolio website built with Next.js",
+}
+
 export default function LayoutProvider({ pageName, children }) {
   const page = usePathname()
   let pageTitle = ""
@@ -29,11 +35,15 @@ export default function LayoutProvider({ pageName, children }) {
     showHeaderFooter = true
   }
 
-  // const sausage = useAnalytics(pageTitle)
-  // console.log(sausage)
-
   return (
     <AnalyticsProvider pageName={pageTitle}>
+      {/* <head>
+        <title>Ben Roberts - Software Engineer</title>
+        <meta
+          name="description"
+          content="Ben Roberts' personal portfolio website built with Next.js"
+        />
+      </head> */}
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {showHeaderFooter ? <Header /> : null}
         {children}
