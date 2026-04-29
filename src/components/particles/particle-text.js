@@ -9,7 +9,8 @@ import TypeWriter from "../type-writer/type-writer"
 export default function ParticleText() {
   const mountRef = useRef(null)
   const modeRef = useRef("random")
-  const [buttonVisible, setButtonVisible] = useState(true)
+  const [textBoxVisible, setTextBoxVisible] = useState(true)
+  const [showButton, setShowButton] = useState(false)
   const router = useRouter()
 
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function ParticleText() {
 
     const PARTICLE_COUNT = 50000
 
-    function getTextPoints(text) {
+    function getTextPoints() {
       const canvas = document.createElement("canvas")
       const ctx = canvas.getContext("2d")
       canvas.width = 1200
@@ -60,21 +61,20 @@ export default function ParticleText() {
       // const canvasHeight = isMobile ? 3 : 2
       const canvasHeight = 2
 
-      // if (isMobile) {
-      //   ctx.fillText(
-      //     "Let's",
-      //     canvas.width / 2,
-      //     canvas.height / canvasHeight - fontSize * 0.6,
-      //   )
-      //   ctx.fillText(
-      //     "Go",
-      //     canvas.width / 2,
-      //     canvas.height / canvasHeight + fontSize * 0.6,
-      //   )
-      // } else {
-      //   ctx.fillText("Let's Go", canvas.width / 2, canvas.height / canvasHeight)
-      // }
-      ctx.fillText(text, canvas.width / 2, canvas.height / canvasHeight)
+      if (isMobile) {
+        ctx.fillText(
+          "Let's",
+          canvas.width / 2,
+          canvas.height / canvasHeight - fontSize * 0.6,
+        )
+        ctx.fillText(
+          "Go",
+          canvas.width / 2,
+          canvas.height / canvasHeight + fontSize * 0.6,
+        )
+      } else {
+        ctx.fillText("Let's Go", canvas.width / 2, canvas.height / canvasHeight)
+      }
 
       const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
       const points = []
@@ -333,11 +333,32 @@ export default function ParticleText() {
   }, [])
 
   function handleClick() {
-    modeRef.current = "forming"
-    if (mountRef.current?._triggerFade) mountRef.current._triggerFade()
+    setTextBoxVisible(false)
 
-    // Hide button after 0.5s
-    setTimeout(() => setButtonVisible(false), 500)
+    const FORM_DELAY = 500 // ⏱️ delay in ms (adjust as you like)
+
+    setTimeout(() => {
+      modeRef.current = "forming"
+
+      if (mountRef.current?._triggerFade) {
+        mountRef.current._triggerFade()
+      }
+    }, FORM_DELAY)
+  }
+
+  const typeWriterContent = {
+    content: [
+      { type: "h2", text: "Hello, I'm Ben" },
+      {
+        type: "p",
+        text: "I'm a software developer",
+      },
+      {
+        type: "p",
+        text: "Welcome to my portfolio site",
+      },
+    ],
+    speed: 100,
   }
 
   return (
@@ -346,13 +367,23 @@ export default function ParticleText() {
       <div
         className={styles.content_container}
         style={{
-          opacity: buttonVisible ? 1 : 0,
-          pointerEvents: buttonVisible ? "auto" : "none",
+          opacity: textBoxVisible ? 1 : 0,
+          pointerEvents: textBoxVisible ? "auto" : "none",
         }}
       >
-        <TypeWriter />
-        <button onClick={handleClick} className={styles.button}>
-          Enter
+        <TypeWriter
+          setShowButton={setShowButton}
+          typeWriterContent={typeWriterContent}
+        />
+        <button
+          onClick={handleClick}
+          className={styles.button}
+          style={{
+            opacity: showButton ? 1 : 0,
+            pointerEvents: showButton ? "auto" : "none",
+          }}
+        >
+          <p className={styles.button_text}>Enter</p>
         </button>
       </div>
     </div>

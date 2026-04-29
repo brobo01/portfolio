@@ -1,12 +1,8 @@
 import styles from "./styles.module.css"
 import { useEffect, useState } from "react"
-export default function TypeWriter({
-  content = [
-    { type: "h2", text: "Hello, I'm Ben" },
-    { type: "p", text: "I'm a software developer" },
-  ],
-  speed = 100,
-}) {
+export default function TypeWriter({ typeWriterContent, setShowButton }) {
+  const content = typeWriterContent.content
+  const speed = typeWriterContent.speed
   const [displayed, setDisplayed] = useState(content.map(() => ""))
   const [lineIndex, setLineIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
@@ -28,6 +24,11 @@ export default function TypeWriter({
 
       return () => clearTimeout(timeout)
     } else {
+      if (lineIndex === content.length - 1) {
+        // Finished last line
+        setShowButton(true)
+        return
+      }
       // Move to next line
       const timeout = setTimeout(() => {
         setLineIndex((prev) => prev + 1)

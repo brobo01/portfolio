@@ -10,6 +10,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: opacity 1s;
 }
 
 .content_container > * {
@@ -17,5 +23,52 @@
 }
 
 .button {
-  color: green;
+  color: var(--accent-blue);
+  background-color: var(--background-light);
+  border-radius: 20px;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  padding: 15px 60px 15px 30px;
+  width: fit-content;
+  margin: auto;
+  opacity: 0;
+  transition:
+    opacity 1s 0.5s,
+    box-shadow 1s;
+  padding-right: 60px;
+  cursor: pointer;
+  box-shadow: var(--background-light) 0px 0px 0px 0px;
+  border: none;
+}
+.button:hover {
+  box-shadow: var(--background-light) 0px 0px 10px 0px;
+}
+
+.button_text {
+  font-family: monospace;
+  color: var(--accent-blue);
+}
+
+.button_text::after {
+  content: "→";
+  animation: bounce-x 1s var(--transition) infinite;
+  animation-delay: 1s;
+  position: absolute;
+}
+
+.button:hover {
+  .button_text::after {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes bounce-x {
+  0%,
+  100% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(28px);
+  }
 }
