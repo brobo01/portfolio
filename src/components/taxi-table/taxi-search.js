@@ -3,7 +3,6 @@
 import { useRef, useState } from "react"
 import TaxiTable from "./taxi-table"
 import styles from "./styles.module.css"
-import layout from "@/app/theme/layout.module.css"
 
 export default function TaxiSearch() {
   const [filters, setFilters] = useState({
@@ -35,23 +34,18 @@ export default function TaxiSearch() {
 
     try {
       const params = new URLSearchParams()
-
       Object.entries(filters).forEach(([key, value]) => {
         if (value) {
           params.append(key, value)
         }
       })
-
       const response = await fetch(`/api/taxi?${params}`, {
         signal: controller.signal,
       })
-
       if (!response.ok) {
         throw new Error("API request failed")
       }
-
       const json = await response.json()
-
       setData(json.data)
     } catch (error) {
       if (error.name !== "AbortError") {
@@ -125,7 +119,6 @@ export default function TaxiSearch() {
       </div>
 
       {error && <div className={styles.error}>{error}</div>}
-
       <TaxiTable data={data} loading={loading} />
     </section>
   )

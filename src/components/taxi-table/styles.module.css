@@ -7,26 +7,6 @@
   overflow: auto;
 }
 
-.filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.filters label {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-weight: 600;
-}
-
-.filters input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
 .buttons {
   display: flex;
   gap: 12px;
@@ -61,11 +41,6 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-
-/* .table {
-  width: 100%;
-  border-collapse: collapse;
-} */
 
 .table th {
   text-align: left;
@@ -112,11 +87,6 @@
   border-bottom: 2px solid #ddd;
 }
 
-/* .tbody {
-  display: block;
-  width: 100%;
-} */
-
 .tr {
   display: flex;
 }
@@ -125,7 +95,6 @@
   flex: 1;
   padding: 12px;
   border-bottom: 1px solid #eee;
-
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -144,7 +113,6 @@
 .filters {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
   gap: 16px;
   margin-bottom: 20px;
 }
@@ -173,12 +141,6 @@
 .error {
   color: red;
 }
-
-/* .table {
-  position: relative;
-
-  min-width: max-content;
-} */
 
 /* HEADER */
 

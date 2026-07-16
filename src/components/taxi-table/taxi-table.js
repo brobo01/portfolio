@@ -95,7 +95,6 @@ export default function TaxiTable({ data = [], loading = false }) {
         // ignore — same fallback as above
       }
     }
-
     wasResizingRef.current = isResizing
   }, [columnSizingInfo, columnSizing])
 
@@ -138,7 +137,6 @@ export default function TaxiTable({ data = [], loading = false }) {
           {table.getHeaderGroups()[0].headers.map((header) => (
             <div key={header.id} className={styles.headerCell}>
               {flexRender(header.column.columnDef.header, header.getContext())}
-
               {header.column.getCanResize() && (
                 <div
                   className={styles.resizeHandle}
@@ -164,7 +162,6 @@ export default function TaxiTable({ data = [], loading = false }) {
                 className={styles.row}
                 style={{
                   transform: `translateY(${virtualRow.start}px)`,
-
                   gridTemplateColumns,
                 }}
               >
