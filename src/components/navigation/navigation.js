@@ -48,10 +48,11 @@ function Navigation(props) {
   const pageUrls = [
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
+    { href: "/big-data", label: "Big Data" },
+    { href: "/contact", label: "Contact" },
     // { href: "/case-studies", label: "Case Studies" },
     // { href: "/games", label: "Games" },
     // { href: "/apis", label: "APIs" },
-    { href: "/contact", label: "Contact" },
   ]
   return (
     <nav className={props.open ? styles.nav_open : styles.nav}>

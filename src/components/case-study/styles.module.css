@@ -1,0 +1,82 @@
+.content {
+  display: grid;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  gap: 1rem;
+  /* background-color: var(--background-light); */
+  background-image: "public/sand-surface-texture.png";
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left {
+    grid-column: 1 /2;
+    grid-row: 1;
+  }
+  .right {
+    grid-column: 2 /3;
+    grid-row: 1;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: var(--global-internal-block-padding);
+}
+
+.quote {
+  border-left: 4px solid #ddd;
+  padding-left: 12px;
+  font-style: italic;
+  color: #555;
+  font-size: 1.3rem;
+}
+
+.challenge_list_item,
+.outcome_list_item,
+.actions_list_item {
+  display: flex;
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+}
+.challenge_list_item::before,
+.outcome_list_item::before,
+.actions_list_item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.challenge_list_item::before {
+  background: linear-gradient(to top left, #ffbb00, #fbf53c);
+}
+.outcome_list_item::before {
+  background: linear-gradient(to top left, #00aa28, #31d04b);
+}
+.actions_list_item::before {
+  background: linear-gradient(to top left, #0400ff, #3c89fb);
+}
+
+.section {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

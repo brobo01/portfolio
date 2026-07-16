@@ -1,0 +1,28 @@
+{
+  "colorHeroText": {
+    "title": "Big Data"
+  },
+  "ctaBanner": {
+    "title": "What can I do for you?",
+    "cta": { "url": "/services", "text": "Services" }
+  },
+  "intro": {
+    "title": "Virtualized data table",
+    "left": {
+      "subheading": "A virtualized data table for exploring millions of NYC taxi trips"
+    },
+    "right": {
+      "paragraphs": [
+        "Public datasets like NYC's taxi trip records run into the hundreds of thousands of rows — enough to bring a naive table implementation to its knees. This project explores how to make that kind of scale feel instant.",
+        "Rather than paginating or truncating the data, I used TanStack Virtual to render only the rows currently in the viewport (plus a small buffer), so the DOM stays small regardless of dataset size. Column widths are resizable and persisted between sessions, and search/filter state is debounced against a live NYC Open Data API endpoint with request cancellation to avoid race conditions on fast typing.",
+        "Stack: Next.js, TanStack Table, TanStack Virtual, NYC Open Data (Socrata) API"
+      ]
+    },
+    "mobileColumns": "1",
+    "mobileLeft": "1",
+    "mobileRight": "1",
+    "desktopColumns": "12",
+    "desktopLeft": "4",
+    "desktopRight": "7"
+  }
+}

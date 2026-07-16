@@ -44,3 +44,7 @@
   font-style: italic;
   color: #555;
 }
+
+.list_item {
+  font-size: 1.1rem;
+}

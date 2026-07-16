@@ -1,0 +1,254 @@
+.container {
+  max-width: 100vw;
+  padding: var(--global-internal-block-padding) var(--global-inline-padding);
+}
+.tableContainer {
+  height: 600px;
+  overflow: auto;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.filters input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.buttons button {
+  padding: 10px 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.cancel {
+  background: crimson;
+  color: white;
+}
+
+.results {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* .table {
+  width: 100%;
+  border-collapse: collapse;
+} */
+
+.table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ccc;
+}
+
+.virtualContainer {
+  height: 600px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  height: 45px;
+}
+
+.cell {
+  flex: 1;
+  padding: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
+.th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* .tbody {
+  display: block;
+  width: 100%;
+} */
+
+.tr {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.state {
+  padding: 40px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filters input {
+  padding: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 10px 18px;
+}
+
+.error {
+  color: red;
+}
+
+/* .table {
+  position: relative;
+
+  min-width: max-content;
+} */
+
+/* HEADER */
+
+.header {
+  display: grid;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 48px;
+  align-items: center;
+  background: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.headerCell {
+  position: relative;
+  padding: 0 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* BODY */
+
+.body {
+  position: relative;
+}
+
+.row {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  align-items: center;
+}
+
+.cell {
+  padding: 0 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* COLUMN RESIZING */
+
+.resizeHandle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.resizeHandle:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* STATES */
+
+.state {
+  padding: 50px;
+  text-align: center;
+  color: #666;
+}

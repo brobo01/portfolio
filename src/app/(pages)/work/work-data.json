@@ -1,0 +1,164 @@
+{
+  "colorHeroText": {
+    "title": "My Work"
+  },
+  "caseStudies": [
+    {
+      "title": "Scapa Whisky",
+      "url": "https://www.scapawhisky.com/en/",
+      "images": [
+        "/case-studies/scapa/scapa-whisky-home-hero.png",
+        "/case-studies/scapa/scapa-whisky-about.png",
+        "/case-studies/scapa/scapa-whisky-product.png",
+        "/case-studies/scapa/scapa-whisky-menu.png"
+      ],
+      "role": "Front-End Developer",
+      "overview": "Delivered a fully responsive, production-ready marketing website as part of a greenfield build for a global brand.",
+      "tech": "Vue.js, JavaScript, Tailwind CSS, PHP, REST APIs",
+      "challenge": [
+        "Pixel-perfect implementation from detailed designs",
+        "Maintaining performance across devices",
+        "Meeting accessibility (WCAG) standards",
+        "Tight delivery timelines"
+      ],
+      "actions": [
+        "Built reusable component-based architecture",
+        "Translated Figma designs into responsive UI",
+        "Collaborated with cross-functional teams",
+        "Integrated APIs and ensured compatibility"
+      ],
+      "outcome": [
+        "Delivered on schedule",
+        "High performance and accessibility",
+        "Strong SEO foundation"
+      ],
+      "takeaway": "Strengthened my ability to deliver high-quality builds balancing performance, accessibility, and design precision."
+    },
+
+    {
+      "title": "Longmorn Whisky",
+      "url": "https://www.scapawhisky.com/en/",
+      "images": [
+        "/case-studies/scapa/scapa-whisky-home-hero.png",
+        "/case-studies/scapa/scapa-whisky-about.png",
+        "/case-studies/scapa/scapa-whisky-product.png",
+        "/case-studies/scapa/scapa-whisky-menu.png"
+      ],
+      "role": "Front-End Developer",
+      "overview": "Delivered a fully responsive, production-ready marketing website as part of a greenfield build for a global brand.",
+      "tech": "Vue.js, JavaScript, Tailwind CSS, PHP, REST APIs",
+      "challenge": [
+        "Pixel-perfect implementation from detailed designs",
+        "Maintaining performance across devices",
+        "Meeting accessibility (WCAG) standards",
+        "Tight delivery timelines"
+      ],
+      "actions": [
+        "Built reusable component-based architecture",
+        "Translated Figma designs into responsive UI",
+        "Collaborated with cross-functional teams",
+        "Integrated APIs and ensured compatibility"
+      ],
+      "outcome": [
+        "Delivered on schedule",
+        "High performance and accessibility",
+        "Strong SEO foundation"
+      ],
+      "takeaway": "Strengthened my ability to deliver high-quality builds balancing performance, accessibility, and design precision."
+    },
+
+    {
+      "title": "Beefeater Gin",
+      "url": "https://www.scapawhisky.com/en/",
+      "images": [
+        "/case-studies/scapa/scapa-whisky-home-hero.png",
+        "/case-studies/scapa/scapa-whisky-about.png",
+        "/case-studies/scapa/scapa-whisky-product.png",
+        "/case-studies/scapa/scapa-whisky-menu.png"
+      ],
+      "role": "Front-End Developer",
+      "overview": "Delivered a fully responsive, production-ready marketing website as part of a greenfield build for a global brand.",
+      "tech": "Vue.js, JavaScript, Tailwind CSS, PHP, REST APIs",
+      "challenge": [
+        "Pixel-perfect implementation from detailed designs",
+        "Maintaining performance across devices",
+        "Meeting accessibility (WCAG) standards",
+        "Tight delivery timelines"
+      ],
+      "actions": [
+        "Built reusable component-based architecture",
+        "Translated Figma designs into responsive UI",
+        "Collaborated with cross-functional teams",
+        "Integrated APIs and ensured compatibility"
+      ],
+      "outcome": [
+        "Delivered on schedule",
+        "High performance and accessibility",
+        "Strong SEO foundation"
+      ],
+      "takeaway": "Strengthened my ability to deliver high-quality builds balancing performance, accessibility, and design precision."
+    },
+
+    {
+      "title": "Chivas Regal",
+      "url": "https://www.scapawhisky.com/en/",
+      "images": [
+        "/case-studies/scapa/scapa-whisky-home-hero.png",
+        "/case-studies/scapa/scapa-whisky-about.png",
+        "/case-studies/scapa/scapa-whisky-product.png",
+        "/case-studies/scapa/scapa-whisky-menu.png"
+      ],
+      "role": "Front-End Developer",
+      "overview": "Delivered a fully responsive, production-ready marketing website as part of a greenfield build for a global brand.",
+      "tech": "Vue.js, JavaScript, Tailwind CSS, PHP, REST APIs",
+      "challenge": [
+        "Pixel-perfect implementation from detailed designs",
+        "Maintaining performance across devices",
+        "Meeting accessibility (WCAG) standards",
+        "Tight delivery timelines"
+      ],
+      "actions": [
+        "Built reusable component-based architecture",
+        "Translated Figma designs into responsive UI",
+        "Collaborated with cross-functional teams",
+        "Integrated APIs and ensured compatibility"
+      ],
+      "outcome": [
+        "Delivered on schedule",
+        "High performance and accessibility",
+        "Strong SEO foundation"
+      ],
+      "takeaway": "Strengthened my ability to deliver high-quality builds balancing performance, accessibility, and design precision."
+    },
+
+    {
+      "title": "ShortSport",
+      "images": [
+        "/case-studies/shortsport/header.png",
+        "/case-studies/shortsport/football.png",
+        "/case-studies/shortsport/download.png"
+      ],
+      "role": "Founder and Lead Software Developer",
+      "overview": "Founded and built ShortSport, a sports news app for busy sports fans using GatsbyJS, Contentful headless CMS and published in the Apple Appstore with over 1,000 users",
+      "tech": "GatsbyJS, CSS, HTML, Contentful, Firebase, REST APIs, GraphQL",
+      "challenge": [
+        "Build a fully functioning sports news app",
+        "Conduct performance marketing to gain users",
+        "Meet design and functionality standards",
+        "Manage a team of freelancers"
+      ],
+      "actions": [
+        "Designed and built sign in/sign up user flow",
+        "Created personalised news feed",
+        "Included like and comment on posts",
+        "Integrated with headless CMS for content"
+      ],
+      "outcome": [
+        "Built with extensive functionality",
+        "Deployed in the Apple AppStore",
+        "Had over 1,000 users"
+      ],
+      "takeaway": "End to end project ownership covering the fundamentals of building an app, deploying to the AppStore and performance marketing"
+    }
+  ]
+}

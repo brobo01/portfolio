@@ -53,3 +53,11 @@ p {
     font-size: 1.3rem;
   }
 }
+
+ul {
+}
+li {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}

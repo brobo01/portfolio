@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@react-three/fiber": "^9.5.0",
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-virtual": "^3.14.6",
     "firebase": "^12.12.0",
     "framer-motion": "^12.38.0",
     "next": "16.1.6",
