@@ -1,0 +1,129 @@
+{
+  "colorHeroText": {
+    "title": "GOV.UK Design System"
+  },
+  "intro": {
+    "title": "GOV.UK Design System in React",
+    "left": {
+      "subheading": "Building accessible GOV.UK Design System components in React."
+    },
+    "right": {
+      "paragraphs": [
+        "Most GOV.UK services are built with Nunjucks, but a growing number run on React — and govuk-frontend's official package isn't written for that world. The CSS and JS ship as-is, so getting an accessible, spec-accurate component working in a React app means writing the JSX by hand and being deliberate about how you hand DOM control over to a library that expects to own it.",
+        "This project walks through three components built this way: an Accordion that wires up govuk-frontend's JS without fighting React's rendering for control of the DOM, a Character count that debounces its live limit announcement so screen readers aren't spammed on every keystroke, and Tabs using the same progressive-enhancement pattern. Along the way I hit a classic SSR gotcha in Next.js, where govuk-frontend's component classes reference HTMLElement as a static class field evaluated the instant the module loads, crashing the server render. I fixed it with a client-only component that dynamically imports govuk-frontend inside useEffect and calls initAll() once per page.",
+        "Stack: Next.js, govuk-frontend, React"
+      ]
+    },
+    "mobileColumns": "1",
+    "mobileLeft": "1",
+    "mobileRight": "1",
+    "desktopColumns": "12",
+    "desktopLeft": "4",
+    "desktopRight": "7"
+  },
+  "accordionTitle": "Frequently Asked Questions",
+  "accordionItems": [
+    {
+      "id": "section-1",
+      "title": "What is GOV.UK Frontend?",
+      "content": "GOV.UK Frontend provides styles, JavaScript and assets for building services that follow the GOV.UK Design System."
+    },
+    {
+      "id": "section-2",
+      "title": "How does the accordion work?",
+      "content": "The GOV.UK Frontend JavaScript progressively enhances the accordion markup with the interactive behaviour."
+    },
+    {
+      "id": "section-3",
+      "title": "Can I have multiple sections open?",
+      "content": "Yes. GOV.UK accordions allow multiple sections to be open at the same time."
+    }
+  ],
+  "tabsColumns": ["Case manager", "Cases Opened", "Cases Closed"],
+  "tabsData": [
+    {
+      "id": "past-day",
+      "title": "Past day",
+      "rows": [
+        {
+          "caseManager": "David Francis",
+          "casesOpened": 3,
+          "casesClosed": 0
+        },
+        {
+          "caseManager": "Paul Farmer",
+          "casesOpened": 1,
+          "casesClosed": 0
+        },
+        {
+          "caseManager": "Rita Patel",
+          "casesOpened": 2,
+          "casesClosed": 0
+        }
+      ]
+    },
+    {
+      "id": "past-week",
+      "title": "Past week",
+      "rows": [
+        {
+          "caseManager": "David Francis",
+          "casesOpened": 24,
+          "casesClosed": 18
+        },
+        {
+          "caseManager": "Paul Farmer",
+          "casesOpened": 16,
+          "casesClosed": 20
+        },
+        {
+          "caseManager": "Rita Patel",
+          "casesOpened": 24,
+          "casesClosed": 27
+        }
+      ]
+    },
+    {
+      "id": "past-month",
+      "title": "Past month",
+      "rows": [
+        {
+          "caseManager": "David Francis",
+          "casesOpened": 98,
+          "casesClosed": 95
+        },
+        {
+          "caseManager": "Paul Farmer",
+          "casesOpened": 122,
+          "casesClosed": 131
+        },
+        {
+          "caseManager": "Rita Patel",
+          "casesOpened": 126,
+          "casesClosed": 142
+        }
+      ]
+    },
+    {
+      "id": "past-year",
+      "title": "Past year",
+      "rows": [
+        {
+          "caseManager": "David Francis",
+          "casesOpened": 1380,
+          "casesClosed": 1472
+        },
+        {
+          "caseManager": "Paul Farmer",
+          "casesOpened": 1129,
+          "casesClosed": 1083
+        },
+        {
+          "caseManager": "Rita Patel",
+          "casesOpened": 1539,
+          "casesClosed": 1265
+        }
+      ]
+    }
+  ]
+}

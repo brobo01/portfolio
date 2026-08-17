@@ -37,15 +37,11 @@ export default function LayoutProvider({ pageName, children }) {
 
   return (
     <AnalyticsProvider pageName={pageTitle}>
-      {/* <head>
-        <title>Ben Roberts - Software Engineer</title>
-        <meta
-          name="description"
-          content="Ben Roberts' personal portfolio website built with Next.js"
-        />
-      </head> */}
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`govuk-frontend-supported ${geistSans.variable} ${geistMono.variable}`}
+      >
         {showHeaderFooter ? <Header /> : null}
+
         {children}
         {showHeaderFooter ? <Footer /> : null}
       </body>
