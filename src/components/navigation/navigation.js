@@ -49,6 +49,7 @@ function Navigation(props) {
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
     { href: "/big-data", label: "Big Data" },
+    { href: "/govuk", label: "GOV UK" },
     { href: "/contact", label: "Contact" },
     // { href: "/case-studies", label: "Case Studies" },
     // { href: "/games", label: "Games" },
